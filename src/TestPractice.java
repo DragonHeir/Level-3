@@ -38,9 +38,9 @@ public class TestPractice {
 	}
 	int[] reduceArrayByHalf(int[] a1) {
 		for (int i = 0; i < a1.length; i++) {			
-			
+			a1[i] = a1[i] / 2;
 		}
-		return a2;
+		return a1;
 	}
 	
 }
