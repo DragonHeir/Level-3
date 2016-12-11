@@ -14,7 +14,9 @@ public class LongChipCompetition {
 
 
 	private ArrayList<Beatle> theBeatles = new ArrayList<Beatle>();
-
+public static void main(String[] args) {
+LongChipCompetition l = new LongChipCompetition();
+}
 
 	private void initializeBeatles() {
 		Beatle george = new Beatle("George");
@@ -27,5 +29,19 @@ public class LongChipCompetition {
 		theBeatles.add(john);
 		theBeatles.add(paul);
 		theBeatles.add(ringo);
+	}
+	LongChipCompetition(){
+		initializeBeatles();
+		double longestChip = 0;
+		String winningBeatle = null;
+		for (int i = 0; i < theBeatles.size(); i++) {
+			for (int j = 0; j < theBeatles.get(i).getChips().size(); j++) {
+				if (theBeatles.get(i).getChips().get(j).getLength() > longestChip){
+					longestChip = theBeatles.get(i).getChips().get(j).getLength();
+					winningBeatle = theBeatles.get(i).getName();
+				}
+			}
+		}
+		System.out.println("The Beatle with the longest chip is " + winningBeatle + ".");
 	}
 }
