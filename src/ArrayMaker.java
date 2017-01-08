@@ -1,6 +1,7 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Stack;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -13,8 +14,9 @@ public class ArrayMaker implements ActionListener {
 	JButton Add;
 	JButton View;
 	
-	ArrayList <String> CreatedList = new ArrayList <String>();
+	Stack <String> CreatedList = new Stack <String>();
 	String input;
+	String display = "";
 	
 	
 public static void main(String[] args) {
@@ -44,7 +46,14 @@ ArrayMaker(){
 public void actionPerformed(ActionEvent e) {
 	if (e.getSource() == Add){
 		input = JOptionPane.showInputDialog("Enter a Name");
-		CreatedList.add(input);
+		CreatedList.push(input);
+	}
+	if (e.getSource() == View){
+		for (int i = 0; i < CreatedList.size();) {
+			display += CreatedList.pop() + "\n";
+		}
+		JOptionPane.showMessageDialog(null, display);
+		display = "";
 	}
 }
 }
