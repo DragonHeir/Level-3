@@ -119,22 +119,22 @@ class Algorithms {
 
 	}
 
-	public static List<String> sortWords(List<String> words) {
-		String temp = "";
-		List<String> sortedSequences = null;
-		for (int i = 0; i < words.size(); i++) {
-			for (int j = i + 1; j < words.size(); j++) {
-				if () {
-					temp = words.get(i);
-					words.set(i, words.get(j));
-					words.set(j, temp);
-					sortedSequences = words;
-				}
-			}
-		}
-		System.out.println(words);
-		return words;
-	}
+	// public static List<String> sortWords(List<String> words) {
+	// String temp = "";
+	// List<String> sortedSequences = null;
+	// for (int i = 0; i < words.size(); i++) {
+	// for (int j = i + 1; j < words.size(); j++) {
+	// if () {
+	// temp = words.get(i);
+	// words.set(i, words.get(j));
+	// words.set(j, temp);
+	// sortedSequences = words;
+	// }
+	// }
+	// }
+	// System.out.println(words);
+	// return words;
+	// }
 
 	public static List<String> sortDNA(List<String> unsortedSequences) {
 		String temp = "";
