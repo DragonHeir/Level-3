@@ -12,7 +12,7 @@ public class FindRange {
 			int highest = 0;
 			int lowest = 1000000000;
 			for (String s : strings) {
-				if(highest < s)
+				
 			}
 		}
 		
