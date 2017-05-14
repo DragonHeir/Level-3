@@ -57,3 +57,4 @@ public void actionPerformed(ActionEvent e) {
 	}
 }
 }
+//copyright 2017 Evan Wright

@@ -19,3 +19,4 @@ public class AnimalHipster {
 	}
 
 }
+//copyright 2017 Evan Wright

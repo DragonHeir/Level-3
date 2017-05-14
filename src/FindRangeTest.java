@@ -272,3 +272,4 @@ public class FindRangeTest {
 	}
 }
 
+//copyright 2017 Evan Wright

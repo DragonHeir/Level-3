@@ -38,4 +38,4 @@ class Crow {
 	}
 
 
-}
+}//copyright 2017 Evan Wright

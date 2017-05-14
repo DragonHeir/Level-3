@@ -19,3 +19,4 @@ public class FindRange {
 	}
 
 }
+//copyright 2017 Evan Wright

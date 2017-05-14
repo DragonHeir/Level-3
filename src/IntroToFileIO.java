@@ -65,4 +65,4 @@ public class IntroToFileIO {
 		
 		System.exit(0);
 	}
-}
+}//copyright 2017 Evan Wright

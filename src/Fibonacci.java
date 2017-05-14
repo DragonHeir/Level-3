@@ -18,3 +18,4 @@ private static void printFibonacci(int total) {
 	}
 }
 }
+//copyright 2017 Evan Wright

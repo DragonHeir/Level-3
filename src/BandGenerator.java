@@ -22,3 +22,4 @@ public static void main(String[] args) {
 	System.out.println("The " + Part1.get(bandname1) + " " + Part2.get(bandname2));
 }
 }
+//copyright 2017 Evan Wright

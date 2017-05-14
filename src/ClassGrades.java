@@ -36,3 +36,4 @@ public static void main(String[] args) {
 	System.out.println(classScores);
 }
 }
+//copyright 2017 Evan Wright

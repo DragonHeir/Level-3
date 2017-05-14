@@ -23,3 +23,4 @@ ArraySort(){
 	}
 }
 }
+//copyright 2017 Evan Wright

@@ -1,34 +1,35 @@
+import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 
 import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
 
 public class FileDecrypter {
 	public static void main(String[] args) {
+		String fileName = null;
 		JFileChooser jfc = new JFileChooser();
 		int returnVal = jfc.showOpenDialog(null);
 		{
-			
+
 			if (returnVal == JFileChooser.APPROVE_OPTION) {
-				String fileName = jfc.getSelectedFile().getAbsolutePath();
-				System.out.println(fileName);
+				fileName = jfc.getSelectedFile().getAbsolutePath();
 			}
 		}
-		String userInput = JOptionPane.showInputDialog("Add Text:");
-		String encrypted = "";
-		for (int i = 0; i < userInput.length(); i++) {
-			encrypted += userInput.charAt(i) + 5 * 3;
-		}
-		FileWriter fw = null;
+		char decrypted = ' ';
 		try {
-			fw = new FileWriter("inputtofile.txt");
-			fw.write(encrypted);
-			fw.close();
+			FileReader fr = new FileReader(fileName);
+			int c = fr.read();
+			while (c != -1) {
+				decrypted = (char) (c - 5);
+				System.out.print((char) decrypted);
+				c = fr.read();
+
+			}
+			fr.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-}
+}//copyright 2017 Evan Wright

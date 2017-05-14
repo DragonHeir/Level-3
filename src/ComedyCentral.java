@@ -26,4 +26,4 @@ public static void main(String[] args) {
 		kb.next();
 		System.out.println(Joke.get(jokechoice));
 }
-}
+}//copyright 2017 Evan Wright
