@@ -37,7 +37,30 @@ public class StackBot {
 			String s = commands.pop();
 			Double m = Double.parseDouble(s.substring(0, 4));
 			String d = s.substring(5, 6);
-			
+			if (d.equals("N")){
+				yPos += m;
+			}
+			if (d.equals("S")){
+				yPos -= m;
+			}
+			if (d.equals("E")){
+				xPos += m;
+			}
+			if (d.equals("W")){
+				xPos -= m;
+			}
+		}
+		if (xPos > 0 && yPos > 0){
+			System.out.println("Waffle");
+		}
+		if (xPos < 0 && yPos > 0){
+			System.out.println("Taco");
+		}
+		if (xPos < 0 && yPos < 0){
+			System.out.println("Cupcake");
+		}
+		if (xPos > 0 && yPos < 0){
+			System.out.println("Poop");
 		}
 	}
 }
